@@ -39,3 +39,16 @@ Abc.log Output:
 2020-04-26 16:16:19	INFO	testing/testing.go:992	a info message
 2020-04-26 16:16:19	ERROR	testing/testing.go:992	a error message with field	{"code": 400}
 */
+
+func TestSetLevel(t *testing.T) {
+	Logger.Debug("debug message 1")
+	Logger.Error("error message 1")
+	SetLevel("info")
+	Logger.Debug("debug message 2")
+	Logger.Error("error message 2")
+}
+/*
+2020-04-26 16:37:30	DEBUG	testing/testing.go:992	debug message 1
+2020-04-26 16:37:30	ERROR	testing/testing.go:992	error message 1
+2020-04-26 16:37:30	ERROR	testing/testing.go:992	error message 2
+*/
