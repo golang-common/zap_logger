@@ -1,0 +1,13 @@
+/.git/
+/.idea/
+/objs/
+/vendor/
+/test
+/*.exe
+/cmdb-api*
+/cmdb-report-api*
+/cmdb-rest-api*
+*.txt
+/*~
+/*/*~
+_gsdata_
